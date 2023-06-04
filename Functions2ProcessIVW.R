@@ -1,3 +1,10 @@
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+
+BiocManager::install("rhdf5")
+
+
 # Functions to process the BoVW in R for STM purposes
 ############################################## Mini functions to be passed on GetVisualSTM
 # Function to get matrix ready
